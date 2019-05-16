@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url('tile.jpg');
+}
+#title {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+    
+}
+h1 {
+    font-size: 70px;
+}
+#note {
+    width: 100%;
+    height: 375px;
+    
+}
+.writeArea {
+    position: relative;
+    margin: auto;
+    width: 600px;
+    height: 350px;
+    background-image: url("formbg.jpg");
+    background-repeat: repeat-y;
+}
+textarea {
+    padding-top: 3%;
+    padding-left: 13%;
+    padding-right: 2%;
+    font-size: 138%;
+    line-height: 150%;
+    width: 600px;
+    height: 212px;
+    background-color: transparent;
+}
+input {
+    background-color: transparent;
+    font-size: 20px;
+}
+#resetnote {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#addNote {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.row {
+    width: 800px;
+    margin: auto;
+}
+.note {
+    position: relative;
+    padding: 20px 25px 30px 5px;    
+    height: 275px;
+    background-image: url('notebg.png');
+    background-repeat: no-repeat;
+    animation: fadeIn 1s;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.text {
+    width: 170px;
+    height: 150px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.del {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    visibility: hidden;
+}
+.del i {
+    font-size: 20px;
+}
+.note:hover .del{
+    visibility: visible;
+}
